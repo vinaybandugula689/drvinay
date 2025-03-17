@@ -1,0 +1,104 @@
+
+# Project Setup and Execution Instructions
+
+## Prerequisites
+
+Before running the project, ensure you have the following software installed:
+
+1. **Visual Studio Code (VS Code)** - Your primary IDE for running the project.
+    - Download and install VS Code .
+
+2. **Python** - Ensure Python is installed on your system, and the version is **10.x** or higher.
+    - Download Python .
+    - Verify the installation by running the following command in your terminal:
+
+    ```
+    python --version
+    ```
+
+    You should see a version of **Python 10.x** or above.
+
+## Project Setup
+
+1. **Open VS Code:**
+    - Open **VS Code** on your system.
+    - Open the project folder within **VS Code**. Navigate to **File > Open Folder...** and select your project directory.
+
+2. **Install Dependencies:**
+    - Open the **terminal** in **VS Code** by selecting **Terminal > New Terminal** or using the shortcut `Ctrl + ~`.
+    - Ensure you're in the project folder where the `requirements.txt` file is located.
+    - Run the following command to install the required dependencies:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+## Running the Application
+
+After successfully installing the dependencies, you can run the application using **Streamlit**:
+
+1. In the **terminal**, run the following command:
+
+    ```
+    python -m streamlit run app.py
+    ```
+
+2. This will start the **Streamlit** server, and you'll be able to access the app via a URL (usually something like `http://localhost:8501/`). Copy and paste the provided URL into your browser to see the app running.
+
+## Creating a Virtual Environment (Optional, if dependency issues occur)
+
+If you face issues with installing dependencies globally, create a **virtual environment**:
+
+1. **Create a Virtual Environment:**
+    - Run the following command to create a virtual environment called `venv` in your project folder:
+
+    ```
+    python -m venv venv
+    ```
+
+2. **Activate the Virtual Environment:**
+
+    - **For Windows:**
+
+        ```bash
+        venv\Scripts\activate
+        ```
+
+    - **For Mac/Linux:**
+
+        ```bash
+        source venv/bin/activate
+        ```
+
+3. Once activated, install the required dependencies inside the virtual environment:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+4. After setting up the environment, remember to **activate the virtual environment** each time you start working on the project.
+
+## Important Notes
+
+- Always make sure to **open the project folder in VS Code** before running the commands.
+- Ensure you **activate the virtual environment** whenever you're working with this project.
+
+## Troubleshooting
+
+1. **Issues with Dependencies:**
+    - If you're encountering issues while installing dependencies (e.g., incompatible packages), try updating **pip** with the following command:
+
+    ```
+    pip install --upgrade pip
+    ```
+
+    Then, re-run the dependency installation command:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+2. **Problems Running the App:**
+    - Ensure that **VS Code** is open to the correct project folder.
+    - Check that all dependencies are properly installed by running `pip list` in the terminal.
+
